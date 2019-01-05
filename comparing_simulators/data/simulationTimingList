@@ -1,0 +1,76 @@
+------------------------------------------------
+20170505 12:30
+1000-1500   25   320	10/5	100-300
+
+	nve1vs3_split_13.78.60.149	3000	MaxVN
+	nve2vs3_split_104.41.191.21	7000	MaxVN
+
+	nve1vs3_split_104.41.184.98	4000	ZeroVN
+	nve2vs3_split_104.41.185.13	8000	ZeroVN
+
+---
+3600-10800	100	320	10/5	200-600
+
+	nve1vs3_split_13.78.56.224	2000	MaxVN
+	nve2vs3_split_13.78.86.126	5000	MaxVN
+
+	nve1vs3_split_13.78.58.219	3000	ZeroVN
+	nve2vs3_split_13.78.61.73	7000	ZeroVN
+
+
+------------------------------------------------
+
+------------------------------------------------
+20170505 14:00
+1000-1500   50   320	10/5	100-200
+
+	nve1vs3_split_13.78.60.149	3000	MaxVN
+	nve2vs3_split_104.41.191.21	7000	MaxVN
+
+	nve1vs3_split_104.41.184.98	4000	ZeroVN
+	nve2vs3_split_104.41.185.13	8000	ZeroVN
+
+---
+3600-10800	200	320	10/5	200-400
+
+	nve1vs3_split_13.78.56.224	2000	MaxVN
+	nve2vs3_split_13.78.86.126	5000	MaxVN
+
+	nve1vs3_split_13.78.58.219	3000	ZeroVN
+	nve2vs3_split_13.78.61.73	7000	ZeroVN
+
+
+------------------------------------------------
+
+
+------------------------------------------------
+20170516 17:00
+1000-1500   50   320	10/5	100-200     VM nodes 3 ~ 10 6   tranpsort path hop 4~6
+
+	nve1vs3_split_13.78.60.149_ZeroVN	3000	ZeroVN
+	nve2vs3_split_104.41.191.21_ZeroVN	7000	ZeroVN
+
+	nve1vs3_split_104.41.184.98_ZeroVN	4000	ZeroVN
+	nve2vs3_split_104.41.185.13_ZeroVN	8000	ZeroVN
+
+---
+1000-1500   50   320	10/5	100-200
+
+	nve1vs3_split_13.78.56.224_MaxVN	2000	MaxVN
+	nve2vs3_split_13.78.86.126_MaxVN	5000	MaxVN
+
+	nve1vs3_split_13.78.58.219_MaxVN	3000	MaxVN
+	nve2vs3_split_13.78.61.73_MaxVN		7000	MaxVN
+
+
+------------------------------------------------
+
+python ./nve1vs3_split_13.78.60.149/data*.py
+python ./nve2vs3_split_104.41.191.21/data*.py
+python ./nve1vs3_split_104.41.184.98/data*.py
+python ./nve2vs3_split_104.41.185.13/data*.py
+python ./nve1vs3_split_13.78.56.224/data*.py
+python ./nve2vs3_split_13.78.86.126/data*.py
+python ./nve1vs3_split_13.78.58.219/data*.py
+python ./nve2vs3_split_13.78.61.73/data*.py
+
